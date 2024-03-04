@@ -72,7 +72,6 @@ class MainActivity : ComponentActivity() {
                             Log.i("hellooooo","uncompressed image$it")
                         }
                         Spacer(modifier = Modifier.height(16.dp))
-                        Text(text = "Compressed Bitmap")
                         viewModel.compressedBitmap?.let {
                             Text(text = "Compressed Bitmap")
                             Image(bitmap = it.asImageBitmap(), contentDescription = null)
